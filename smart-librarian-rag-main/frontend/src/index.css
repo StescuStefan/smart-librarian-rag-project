@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .text-shadow-md {
+    text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+  }
+  .text-shadow-xs {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  .aura-pulse {
+    animation: pulse-glow 2s infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 30px rgba(199, 163, 238, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(74, 3, 150, 0.9);
+    }
+  }
+}
+
+@layer base {
+  html, body {
+    @apply font-pop;
+  }
+}

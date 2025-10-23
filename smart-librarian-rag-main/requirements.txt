@@ -1,0 +1,21 @@
+# === Core dependencies ===
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+requests
+aiofiles
+python-multipart
+
+# === Vector DB ===
+chromadb
+
+# === AI & OpenAI APIs ===
+openai>=1.2.0
+
+# === Google Cloud APIs ===
+google-cloud-texttospeech
+google-cloud-speech
+
+# === Audio processing (optional for audio conversion or trimming) ===
+pydub
