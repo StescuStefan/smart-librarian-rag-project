@@ -125,10 +125,6 @@ def is_inappropriate(text: str) -> bool:
         "racist", "sexist", "homophobic", "nazi",
         "bigot", "asshole", "dickhead", "dick", "penis", "shit", "crap", "slut", "hoe", "bitch",
         "fuck you", "f you", "fuck",
-        # Romanian examples
-        "prost", "idiot", "tampit", "bou",
-        "jeg", "muist", "curva", "zdreanta", "dracu", "naiba", "nesimtit", "nesimtire", "nesimtita", "nesimtitule", "nesimtitulei", "nesimtitului", "nesimtitilor",
-        "fraiere", "tampitule", "prostule", "cacatule", "muie", "sugi pula", "sugi", "pula"
     ]
     lower_text = text.lower()
     return any(banned_word in lower_text for banned_word in banned_words)
